@@ -1,0 +1,45 @@
+*{
+    font-family: Georgia, serif;;
+}
+
+.nav-link {
+    color: white; /* Ensure text is white */
+    position: relative; /* Needed for the pseudo-element */
+    text-decoration: none; /* Remove default underline */
+    display: inline-block; /* Add this line */
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.title-a {
+    color: black;
+    position: relative;
+    text-decoration: none;
+    display: inline-block; /* Add this line */
+}
+
+.title-a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s;
+}
+
+.title-a:hover::after {
+    width: 100%;
+}
