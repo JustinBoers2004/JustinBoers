@@ -2,11 +2,15 @@
     font-family: Georgia, serif;;
 }
 
+.navbar {
+    background-color: #151516;
+}
+
 .nav-link {
-    color: white; /* Ensure text is white */
-    position: relative; /* Needed for the pseudo-element */
-    text-decoration: none; /* Remove default underline */
-    display: inline-block; /* Add this line */
+    color: white;
+    position: relative; 
+    text-decoration: none; 
+    display: inline-block; 
 }
 .nav-link::after {
     content: '';
